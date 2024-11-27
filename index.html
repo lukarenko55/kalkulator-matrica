@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="width">
+    <h1>Matrix Calculator</h1>
+
+    <div class="matrix-container ">
+        <div class="matrix" id="matrixA">
+            <h4>Matrix A</h4>
+        </div>
+        <div class="matrix" id="matrixB">
+            <h4>Matrix B</h4>
+        </div>
+    </div>
+
+    <div class="dimension-controls">
+        <h4>Matrix A Dimensions:</h4>
+        Rows: <input type="number" id="rowsAInput" value="3" min="1" max="10">
+        Columns: <input type="number" id="colsAInput" value="3" min="1" max="10">
+        <input type="range" id="rowsA" value="3" min="1" max="10">
+        <input type="range" id="colsA" value="3" min="1" max="10">
+    </div>
+
+    <div class="dimension-controls ">
+        <h4>Matrix B Dimensions:</h4>
+        Rows: <input type="number" id="rowsBInput" value="3" min="1" max="10">
+        Columns: <input type="number" id="colsBInput" value="3" min="1" max="10">
+        <input type="range" id="rowsB" value="3" min="1" max="10">
+        <input type="range" id="colsB" value="3" min="1" max="10">
+    </div>
+
+    <div class="operations">
+        <h4>Operations for Matrix A:</h4>
+        <button onclick="transposeMatrix('A')">Transpose A</button>
+        <button onclick="scalarMultiply('A')">Multiply A by Scalar</button>
+        <button onclick="fillRandom('A')">Randomize A</button>
+        <button onclick="clearMatrix('A')">Clear A</button>
+        <button onclick="determinant('A')">Determinant A</button>
+        <button onclick="inverseMatrix('A')">Inverse A</button>
+        <button onclick="powerMatrix('A')">Power A</button>
+
+        <h4>Operations for Matrix B:</h4>
+        <button onclick="transposeMatrix('B')">Transpose B</button>
+        <button onclick="scalarMultiply('B')">Multiply B by Scalar</button>
+        <button onclick="fillRandom('B')">Randomize B</button>
+        <button onclick="clearMatrix('B')">Clear B</button>
+        <button onclick="determinant('B')">Determinant B</button>
+        <button onclick="inverseMatrix('B')">Inverse B</button>
+        <button onclick="powerMatrix('B')">Power B</button>
+
+        <h4>Operations for Both Matrices:</h4>
+        <button onclick="addMatrices()">Add (A + B)</button>
+        <button onclick="subtractMatrices()">Subtract (A - B)</button>
+        <button onclick="multiplyMatrices()">Multiply (A × B)</button>
+    </div>
+    
+    <h3>Result:</h3>
+    <div id="result"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
