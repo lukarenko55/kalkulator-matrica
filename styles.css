@@ -8,6 +8,12 @@ body {
     padding: 20px;
 }
 
+.width{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Page Header */
 h1 {
     color: #005fa3;
@@ -17,22 +23,25 @@ h1 {
 /* Matrix Containers */
 .matrix-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
-    background-color: #e1edf5;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    //background-color: #e1edf5;
+    padding: 5px;
+    //border-radius: 8px;
+    //border: 1px solid #ccc;
 }
 
 /* Matrix Styles */
 .matrix {
+    width: auto;
+    margin: 5px;
     text-align: center;
     background-color: #f7fcff;
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .matrix h4 {
